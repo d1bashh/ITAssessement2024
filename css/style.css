@@ -34,6 +34,13 @@
     color: yellow;
   }
 
+  .footer{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  /* Below - index.html */
+
   .slider {
     width: 1320px;
     height: 500px;
@@ -48,7 +55,32 @@
     display: block;
   }
 
-  .footer{
-    text-align: center;
-    margin-top: 50px;
+  /* Below - galllery.html */
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+
+  .gallery a {
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+
+  .gallery a:hover {
+    transform: scale(1.03);
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
   }
